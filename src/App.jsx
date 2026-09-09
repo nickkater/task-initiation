@@ -8,8 +8,8 @@ export default function App() {
   const [reframe, setReframe] = useState('');
   
   const [timeLeft, setTimeLeft] = useState(120);
-  const [estSeconds, setEstSeconds] = useState(120);
-  const [crisis, setCrisis] = useState(false);
+  const [_estSeconds, setEstSeconds] = useState(120);
+  const [_crisis, setCrisis] = useState(false);
   const [isRunning, setIsRunning] = useState(false);
   const [points, setPoints] = useState(() => {
     const saved = localStorage.getItem('taskInitiationPoints');
