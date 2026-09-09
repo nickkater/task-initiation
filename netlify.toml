@@ -1,4 +1,6 @@
 [build]
+[build.environment]
+  CI = "false"
   command = "npm run build"
   publish = "build"
 
