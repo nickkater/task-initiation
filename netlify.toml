@@ -1,16 +1,16 @@
 [build]
-  command = "npm run build"
-  functions = "netlify/functions"
-  publish = "build"
+command = "npm run build"
+functions = "netlify/functions"
+publish = "build"
 
 [dev]
-  command = "npm start"
-  port = 3000
+command = "npm start"
+port = 3000
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/*"
+to = "/index.html"
+status = 200
 
 [[functions]]
-  node_bundler = "esbuild"
+node_bundler = "esbuild"
