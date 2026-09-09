@@ -6,14 +6,14 @@ export default function App() {
   const [task, setTask] = useState('');
   const [firstStep, setFirstStep] = useState('');
   const [reframe, setReframe] = useState('');
-  const [estSeconds, setEstSeconds] = useState(120);
+  
   const [timeLeft, setTimeLeft] = useState(120);
   const [isRunning, setIsRunning] = useState(false);
   const [points, setPoints] = useState(() => {
     const saved = localStorage.getItem('taskInitiationPoints');
     return saved ? parseInt(saved) : 0;
   });
-  const [crisis, setCrisis] = useState(false);
+  
 
   // 포인트 저장
   useEffect(() => {
